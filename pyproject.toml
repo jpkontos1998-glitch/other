@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ataraxos"
+readme = "README.md"
+requires-python = ">= 3.10"
+license = {text = "MIT license"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version"]
+
+[tool.setuptools]
+packages = ["pyengine"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.black]
+line-length = 100

@@ -1,0 +1,15 @@
+.ninja_log
+build/
+__pycache__
+*.mp4
+compile_commands.json
+node_modules
+*wandb
+.vscode*
+exps*
+data*
+ataraxos.egg-info*
+local*
+checkpoints*
+run.sh
+set_env.sh

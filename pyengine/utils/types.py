@@ -1,0 +1,20 @@
+from enum import Enum
+
+
+class InitApproach(Enum):
+    JB = "JB"
+    UNIFORM = "UNIFORM"
+    NN = "NN"
+
+
+class JobStatus(Enum):
+    SUCCESSFUL = "SUCCESSFUL"
+    OUTSTANDING = "OUTSTANDING"
+    FAILURE = "FAILURE"
+
+
+class GenerateArgType(Enum):
+    MARGLIZED_UNIFORM = "MARGLIZED_UNIFORM"
+    UNIFORM = "UNIFORM"
+    PLANAR_TRANSFORMER = "PLANAR_TRANSFORMER"
+    TEMPORAL_TRANSFORMER = "TEMPORAL_TRANSFORMER"

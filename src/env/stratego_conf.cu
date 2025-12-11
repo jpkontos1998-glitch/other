@@ -1,0 +1,28 @@
+#include "src/env/stratego_conf.h"
+
+const char *ResetBhToString(const ResetBehavior bh)
+{
+    switch (bh)
+    {
+    case CUSTOM_ENV_STATE:
+        return "CUSTOM_ENV_STATE";
+    case RANDOM_CUSTOM_INITIAL_ARRANGEMENT:
+        return "RANDOM_CUSTOM_INITIAL_ARRANGEMENT";
+    case STEP_CUSTOM_INITIAL_ARRANGEMENT:
+        return "STEP_CUSTOM_INITIAL_ARRANGEMENT";
+    case FULLINFO_RANDOM_CUSTOM_INITIAL_ARRANGEMENT:
+        return "FULLINFO_RANDOM_CUSTOM_INITIAL_ARRANGEMENT";
+    case FULLINFO_STEP_CUSTOM_INITIAL_ARRANGEMENT:
+        return "FULLINFO_STEP_CUSTOM_INITIAL_ARRANGEMENT";
+    case RANDOM_JB_CLASSIC_BOARD:
+        return "RANDOM_JB_CLASSIC_BOARD";
+    case RANDOM_JB_BARRAGE_BOARD:
+        return "RANDOM_JB_BARRAGE_BOARD";
+    case FULLINFO_RANDOM_JB_CLASSIC_BOARD:
+        return "FULLINFO_RANDOM_JB_CLASSIC_BOARD";
+    case FULLINFO_RANDOM_JB_BARRAGE_BOARD:
+        return "FULLINFO_RANDOM_JB_BARRAGE_BOARD";
+    default:
+        MUSTRATEGO_FATAL("Unreachable reset behavior");
+    };
+}
